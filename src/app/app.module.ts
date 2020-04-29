@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -7,6 +8,8 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPokemonPipePipe } from './filter-pokemon--pipe.pipe';
 import { PokedetailComponent } from './pokedetail/pokedetail.component';
+import {CalendarModule} from 'primeng/calendar';
+import {ToggleButtonModule} from 'primeng/togglebutton';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { PokedetailComponent } from './pokedetail/pokedetail.component';
   imports: [
     FormsModule,
     BrowserModule,
+    BrowserAnimationsModule,
+    CalendarModule,
+    ToggleButtonModule,
     HttpClientModule,
     AppRoutingModule
   ],
